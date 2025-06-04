@@ -14,12 +14,13 @@ This is a **binary classification** task: determine whether two given questions 
 | Logistic Regression (TF-IDF)| 0.45201 | 0.46431 |
 | Random Forest (TF-IDF)| 0.46324 | 0.48274 |
 | LGBMClassifier (TF-IDF)| 0.47579 | 0.48881 |
-| Logistic Regression with TF-IDF on matching words | 0.517740 | 0.538560  |
+| Logistic Regression with TF-IDF on matching words | 0.51774 | 0.53856 |
 | XGBClassifier (TF-IDF)| 0.53803 | 0.53968 |
 | GloVe Embeddings with Logistic Regression | 0.56615 | 0.56536 |
 | **Baseline: DummyClassifier (uniform)** | **0.69315** | **0.69315** |
 
 **🏆 Best Performance**: BERT Fine-Tuning achieved the lowest validation log loss of 0.27312
+
 **Baseline**: DummyClassifier with uniform strategy provides the reference point at 0.693147
 
 ## Project Structure
