@@ -1,6 +1,6 @@
 # Quora Question Pairs Duplicate Detection
 
-A comprehensive machine learning project for identifying duplicate question pairs using the Quora Question Pairs dataset from Kaggle. The goal is to improve search and recommendation systems by detecting duplicate questions.This project explores multiple approaches — from traditional ML to state-of-the-art transformer models.
+A comprehensive machine learning project for identifying duplicate question pairs using the Quora Question Pairs dataset from Kaggle. The goal is to improve search and recommendation systems by detecting duplicate questions.This project explores multiple approaches — from traditional ML to  transformer models with a focus on BERT fine-tuning and interpretability.
 
 ## Project Overview
 This is a **binary classification** task: determine whether two given questions are duplicates. Applications include search engines, Q&A platforms, and content deduplication systems.
@@ -40,7 +40,8 @@ This is a **binary classification** task: determine whether two given questions 
 │   ├── 05_embeddings_with_cosine_similarity.ipynb
 │   ├── 06_embeddings_approach.ipynb  # Advanced embedding techniques
 │   ├── 07_bert_finetuning.ipynb      # BERT model fine-tuning
-│   └── 08_model_comparison.ipynb     # Final model comparison
+│   ├── 08_bert_interpreting.ipynb    # Interpret BERT predictions using Captum
+│   └── 09_model_comparison.ipynb     # Final model comparison
 ├── src/
 │   └── utils.py                      # Utility functions for the project
 ├── requirements.txt
@@ -94,6 +95,15 @@ Lower log loss indicates better performance, with perfect predictions achieving 
 Due to GitHub's file size limits, the fine-tuned BERT model is stored on **Google Drive**.
 - [Download model](https://drive.google.com/file/d/1LMdECszFOCzrs6AbSnBwS2lzwTwOG8Y9/view?usp=drive_link)
 - Place it in the `models/bert_quora_model/` folder
+
+## Interpreting BERT with Captum
+
+In `08_Interpreting_BERT.ipynb`, we use the [Captum](https://captum.ai/) library to interpret BERT model predictions. Using **Integrated Gradients**, we compute **token-level attributions** that show how much each token contributed to the model’s decision.
+
+**Key features**:
+- Attribution visualization with `captum.attr.visualize_text()`
+- Randomly selected examples from test set
+- Side-by-side comparison of question pairs and predicted
 
 ## 🔍 Next Steps
 
