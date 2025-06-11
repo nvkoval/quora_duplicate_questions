@@ -108,10 +108,10 @@ In `08_Interpreting_BERT.ipynb`, we use the [Captum](https://captum.ai/) library
 ## 🔍 Next Steps
 
 - Implement more careful preprocessing text
+- Experiment with custom neural networks such as LSTM or Siamese BiLSTM models
 - Experiment with other transformer architectures (RoBERTa, DeBERTa)
 - Add cross-validation for more robust evaluation
 - Deploy model as REST API
-- Optimize inference speed for production use
 
 ---
 
