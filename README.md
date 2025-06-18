@@ -116,8 +116,9 @@ In `08_Interpreting_BERT.ipynb`, we use the [Captum](https://captum.ai/) library
 
 We built a lightweight **REST API** for duplicate question detection using the fine-tuned BERT model.
 
-**Live Demo:**
-[https://api-duplicate-questions.onrender.com](https://api-duplicate-questions.onrender.com/docs)
+🔗 **Live Demo:** [https://api-duplicate-questions.onrender.com](https://api-duplicate-questions.onrender.com/docs)
+
+**API Source Code:** [nvkoval/ml_api](https://github.com/nvkoval/ml_api/)
 
 ### Features
 - FastAPI + Pydantic-based RESTful backend
